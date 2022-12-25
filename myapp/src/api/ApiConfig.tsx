@@ -1,9 +1,9 @@
-import axios from "axios";
+import axios from 'axios';
 
-const url = "http://192.168.1.110:3000";
+const url = process.env.API_URL;
 
 const API = axios.create({
-	baseURL: url,
+  baseURL: url,
 });
 
 export default API;
